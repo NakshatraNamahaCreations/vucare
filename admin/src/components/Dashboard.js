@@ -82,7 +82,7 @@ function Dashboard() {
 
   const getservicemanagement = async () => {
     let res = await axios.get(
-      "http://localhost:8008/api/userapp/getservices"
+      "https://api.thevucare.com/api/userapp/getservices"
     );
     if ((res.status = 200)) {
       setServicedata(res.data?.service);
